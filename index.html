@@ -732,19 +732,22 @@
     <section id="page-proposal" class="page-section">
         <div class="container">
             <h2 class="section-title">咖啡廳合作提案</h2>
-            <p class="section-subtitle">創造離峰時段互利雙贏的精緻生活美學體驗</p>
+            <p class="section-subtitle">攜手共創質感美學空間，打造雙向賦能的精緻生活體驗</p>
 
             <div class="proposal-banner">
-                <h3>☕ 給合作咖啡廳老闆的提案亮點</h3>
-                <p><strong>• 精緻小班（2~4人）：</strong> 適合利用店內角落大桌或包廂，不佔用高營運時段，不影響一般顧客。</p>
-                <p><strong>• 絕佳飲品搭配：</strong> 結合店內午茶與飲品低消，為店家創造平日離峰時段的穩定營收。</p>
-                <p><strong>• 100% 天然精油：</strong> 採用溫和天然精油，氣味舒適不刺鼻，維護店內美好氛圍與質感。</p>
+                <h3>☕ 空間賦能與共榮合作亮點</h3>
+                <p><strong>• 精緻小班（2~4人）：</strong> 精準規劃店內特色角落與桌位，以高質感美學活動吸引精準客群，增添場域文化價值。</p>
+                <p><strong>• 互利雙贏共生：</strong> 結合店內午茶與飲品低消，為合作夥伴創造平日離峰時段的穩定客源與優質營收。</p>
+                <p><strong>• 品牌形象加乘：</strong> 導入 100% 天然純淨精油與自然手作美學，共同形塑咖啡廳精緻、沉靜的高質感品牌調性。</p>
             </div>
 
             <h3 style="margin-bottom: 25px; color: var(--color-primary); text-align: center;">精選自然生活手作課程</h3>
             <div class="courses-grid">
-                <div class="course-card">
-                    <div class="course-img" style="background-image: url('https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="course-card" onclick="openModal('candle')">
+                    <div class="course-img-wrapper" style="height: 180px; position: relative; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=80" alt="冬日微醺天然精油蠟燭課" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        <div class="feature-badge-float" style="position: absolute; top: 15px; right: 15px; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(4px); color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; letter-spacing: 1px;">精油蠟燭</div>
+                    </div>
                     <div class="course-body">
                         <div>
                             <span class="tag">天然精油</span>
@@ -752,11 +755,15 @@
                         </div>
                         <h3 style="margin-top: 10px;">冬日微醺天然精油蠟燭課</h3>
                         <p>引導學員調配專屬氣味，親手製作帶有溫暖燭光的天然大豆蠟燭，享受靜謐午後。</p>
+                        <span class="read-more-link" style="margin-top: 15px; display: inline-block;">點擊看課程詳細介紹</span>
                     </div>
                 </div>
 
-                <div class="course-card">
-                    <div class="course-img" style="background-image: url('https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=80');"></div>
+                <div class="course-card" onclick="openModal('botanical')">
+                    <div class="course-img-wrapper" style="height: 180px; position: relative; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&q=80" alt="療癒多肉組盆與苔球創作" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        <div class="feature-badge-float" style="position: absolute; top: 15px; right: 15px; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(4px); color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; letter-spacing: 1px;">植物手作</div>
+                    </div>
                     <div class="course-body">
                         <div>
                             <span class="tag">植物手作</span>
@@ -764,6 +771,7 @@
                         </div>
                         <h3 style="margin-top: 10px;">療癒多肉組盆與苔球創作</h3>
                         <p>從土壤、植物與苔蘚的觸感出發，把大自然的小風景帶回居家生活空間。</p>
+                        <span class="read-more-link" style="margin-top: 15px; display: inline-block;">點擊看課程詳細介紹</span>
                     </div>
                 </div>
             </div>
@@ -830,7 +838,7 @@
             nature: {
                 title: "🌿 自然療癒力量",
                 image: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=800&q=80",
-                desc: "在水泥叢林與忙碌的日常中，我們往往遺忘了與大自然的緊密連結。森裡透過植物、泥土與自然手作素材，帶領學員重新觸碰泥土的質樸與植物的生機。這不只是一堂手作課，更是一場溫柔的心靈森呼吸。",
+                desc: "在水泥叢林與忙碌的日常中，我們往往遺忘了與大自然的緊密連結。森裡透過植物、泥土與自然素材，帶領學員重新觸碰泥土的質樸與植物的生機。這不只是一堂手作課，更是一場溫柔的心靈森呼吸。",
                 boxTitle: "自然療癒的三大核心：",
                 items: [
                     "觸覺體驗：透過苔球與植物組盆，釋放日常焦慮。",
@@ -839,25 +847,47 @@
                 ]
             },
             aroma: {
-                title: "🕯️ 100% 天然精油香氣",
+                title: "🕯️ 精油香氣",
                 image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80",
-                desc: "氣味是記憶與情感最直接的鑰匙。森裡堅持使用 100% 純天然植物精油調香，絕不添加人工定香劑與化學香精。溫和純淨的香氣在空氣中流淌，不僅能營造舒適放鬆的空間氛圍，更能溫柔包覆每一位到訪的靈魂。",
+                desc: "100% 天然精油調香，氣味溫和純淨，營造舒適放鬆的空間氛圍。氣味是記憶與情感最直接的鑰匙，我們堅持使用純植物萃取，讓香氣溫柔包覆每一位到訪的靈魂。",
                 boxTitle: "精油香氣的堅持：",
                 items: [
-                    "純淨無負擔：嚴選國際認證天然精油，孕婦與孩童也能安心。",
+                    "嚴選品質：嚴選符合國際品質標準之植物精油，溫和無負擔。",
                     "層次豐富：運用法式調香邏輯，前、中、後調完美揉合。",
                     "空間質感：為咖啡廳注入專屬品牌氣味記憶，提升顧客好感度。"
                 ]
             },
             space: {
-                title: "☕ 咖啡廳空間共創提案",
+                title: "☕ 空間共創",
                 image: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80",
-                desc: "我們深知獨立咖啡廳經營不易，特別是在平日或離峰時段。森裡主打 2-4 人精緻小班制，巧妙利用咖啡廳既有的特色角落或包廂，不僅不佔用高營運時段，更能帶動店內飲品低消，為店家與品牌創造雙贏的新商業美學。",
+                desc: "主打 2-4 人精緻小班，進駐文青咖啡廳，打造離峰時段的質感體驗。我們深知獨立咖啡廳經營不易，透過精緻小班活動，巧妙利用店內角落或包廂，不佔用高營運時段，為店家與品牌創造雙贏的新商業美學。",
                 boxTitle: "空間共創優勢：",
                 items: [
                     "精緻小班（2-4人）：不干擾店內正常客群，維持咖啡廳原有的寧靜。",
                     "互利雙贏：結合下午茶低消，有效提升平日離峰時段翻桌率與營收。",
                     "質感加分：手作質感與咖啡廳文青氛圍完美融合，吸引優質客群。"
+                ]
+            },
+            candle: {
+                title: "🕯️ 冬日微醺天然精油蠟燭課",
+                image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80",
+                desc: "引導學員調配專屬氣味，親手製作帶有溫暖燭光的天然大豆蠟燭，享受靜謐午後。在寒冷的冬日裡，點上一盞親手調配香氣的蠟燭，讓暖光與純淨精油香氣撫平心靈。",
+                boxTitle: "課程亮點與內容：",
+                items: [
+                    "專屬調香：學習法式香氣配置，調配屬於自己當下心境的氣味。",
+                    "天然材質：使用環保大豆蠟與嚴選植物精油，燃燒純淨。",
+                    "咖啡廳漫活：結合咖啡廳下午茶時段，享受優雅的手作慢時光。"
+                ]
+            },
+            botanical: {
+                title: "🌿 療癒多肉組盆與苔球創作",
+                image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=80",
+                desc: "從土壤、植物與苔蘚的觸感出發，把大自然的小風景帶回居家生活空間。無需高深園藝技巧，透過講師溫柔的帶領，每個人都能在苔球纏繞與多肉組合中找到與自己對話的節奏。",
+                boxTitle: "課程亮點與內容：",
+                items: [
+                    "觸覺森呼吸：親手感受介質與植物，釋放平日累積的忙碌與壓力。",
+                    "居家美學：打造精巧且易於照顧的綠意擺飾，點綴日常質感生活。",
+                    "新手友善：2-4 人精緻小班互動教學，隨時針對個人調整引導。"
                 ]
             }
         };
@@ -910,6 +940,10 @@
 
             document.getElementById('infoModal').classList.add('open');
             document.body.style.overflow = 'hidden'; // 防止背景滾動
+        }
+
+        function openCourseModal(key) {
+            openModal(key);
         }
 
         function closeModal() {
